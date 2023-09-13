@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirección a la Aplicación</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Bienvenido a la Aplicación</h1>
+        <p>Haga clic en el botón para abrir la aplicación:</p>
+        
+        <button onclick="abrirApp()">Abrir Aplicación</button>
+    </div>
+
+    <script>
+        function abrirApp() {
+            window.location.href = "miapp://testcalculator/ras=123ABC";
+ 
+            setTimeout(function() {
+                redirigirATienda();
+            }, 2500);
+        }
+
+        function redirigirATienda() {
+            window.location.href = "https://play.google.com/store/apps/details?id=dev.scastillo";
+        }
+
+    </script>
+</body>
+</html>
